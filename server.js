@@ -8,12 +8,12 @@ const app = express();
 
 app.use(cors()); 
 
-// Serve static files from the 'public' directory
-app.use(express.static('public'));
+// Serve static files from the 'docs' directory
+app.use(express.static('docs'));
 
 // Define a route handler for the root URL
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/Portfolio.html');
+    res.sendFile(__dirname + '/docs/Portfolio.html');
 });
 
 // Your existing proxy endpoint for fetching repository details
