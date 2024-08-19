@@ -1,6 +1,0 @@
-# Node modules
-node_modules/
-
-# Package files
-package.json
-package-lock.json
