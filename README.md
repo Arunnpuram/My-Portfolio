@@ -23,13 +23,11 @@ To get a local copy up and running, follow these simple steps.
 2. Navigate to the directory where you want to clone the repository.
 3. Run the following command:
 
-   https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
-
-   Replace `YOUR-USERNAME` and `YOUR-REPOSITORY` with the actual username and repository name.
+   https://github.com/Arunnpuram/My-Portfolio.git
 
 4. Change into the cloned directory:
   
-   cd YOUR-REPOSITORY
+   cd My-Portfolio
 
    
 #### Install Dependencies
