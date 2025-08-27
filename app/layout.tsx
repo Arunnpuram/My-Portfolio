@@ -1,28 +1,19 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { GeistSans } from "geist/font/sans"
-import { GeistMono } from "geist/font/mono"
-import { ThemeProvider } from "@/components/theme-provider"
-import "./globals.css"
+import type { Metadata } from 'next'
+import './globals.css'
 
 export const metadata: Metadata = {
-  title: "Arun Puram - DevOps Engineer",
-  description: "DevOps Engineer specializing in cloud infrastructure, automation, and CI/CD pipelines",
-    generator: 'v0.app'
+  title: 'Arun Puram - DevOps Engineer',
+  description: 'Portfolio of Arun Puram, DevOps Engineer specializing in cloud infrastructure and automation',
 }
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          {children}
-        </ThemeProvider>
-      </body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   )
 }
